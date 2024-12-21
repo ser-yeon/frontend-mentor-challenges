@@ -362,7 +362,7 @@ footer {
         margin: auto;
         padding-left: 3 * $padding-left-right - 0.5em;
         flex-grow: 0;
-        transform: translateY(-2.8rem + 1.2rem);//half of the header-height, height of attributtion
+        padding-bottom: 1.6rem;//half of the header-height, height of attributtion
         min-width: 63rem;
     }
 

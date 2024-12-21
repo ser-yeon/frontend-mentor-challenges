@@ -315,7 +315,7 @@ footer img {
     margin: auto;
     padding-left: 2.5em;
     flex-grow: 0;
-    transform: translateY(-1.6rem);
+    padding-bottom: 1.6rem;
     min-width: 63rem;
   }
   picture {
@@ -348,6 +348,7 @@ footer img {
     grid-column: 1/2;
     align-self: flex-end;
     transform: none;
+    padding-bottom: 0;
   }
   section, footer {
     padding: 0;
