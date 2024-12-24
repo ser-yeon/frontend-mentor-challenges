@@ -13,6 +13,7 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
 - [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -51,6 +52,12 @@ Users should be able to:
   1.  [Two Types of English Double Quotes](#q1)
   2.  [How to Use APIs](#q2)
   3.  [Unable to Get New Responses in Firefox](#q3)
+  4.  [Use min-height 100vh instead of 100%]
+  5.  [Explore Andy Bell's modern CSS reset; I can try using it in the next challenge.]
+  6.  [Avoid using `clamp()` unnecessarily; it might overcomplicate things]
+  7.  [Add the `aria-live` attribute to improve accessibility for screen readers](#q7)
+  8.  [Prefer max-width over width in viewport units]
+  9.  [Keep in mind that some users might adjust their default text size settings, which can affect properties defined with `em` units, such as padding.]
 
 #### Problem Solving
 
@@ -101,6 +108,20 @@ A: Use `{ cache: "no-store" }` in the fetch request to ensure fresh responses.
 const response = await fetch(apiUrl, { cache: "no-store" });
 ```
 
+##### Q7
+
+Add the `aria-live` attribute to improve accessibility for screen readers:
+
+```html
+<p aria-live="assertive"></p>
+```
+
+It supports three values:
+
+- `assertive`: Announces changes immediately.
+- `polite`: Announces changes when the user is idle.
+- `off` (default): No announcements are made.
+
 ### Continued development
 
 There’s still much I need to learn about requests and responses. For example, I don’t understand why Chrome can fetch new requests but Firefox cannot.
@@ -108,3 +129,7 @@ There’s still much I need to learn about requests and responses. For example, 
 ## Author
 
 - Frontend Mentor - [@ser-yeon](https://www.frontendmentor.io/profile/ser-yeon)
+
+## Acknowledgments
+
+- [@grace-snow](https://www.frontendmentor.io/profile/grace-snow) - Her feedback has been incredibly helpful.
