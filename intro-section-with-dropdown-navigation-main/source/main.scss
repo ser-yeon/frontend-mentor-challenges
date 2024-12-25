@@ -67,7 +67,7 @@ nav > {
         cursor: pointer;
     }
     label::after {
-        content: url(/images/icon-menu.svg);
+        content: url(../images/icon-menu.svg);
         display: block;
     }
 }
@@ -93,7 +93,7 @@ ul {
     z-index: 1;
 }
 #hamburger:checked ~ label::after {
-    content: url(/images/icon-close-menu.svg);
+    content: url(../images/icon-close-menu.svg);
     display: block;
     position: absolute;
     top: $header-padding-top;
@@ -162,7 +162,7 @@ li {
     flex-wrap: wrap;
 
     label::after {
-        content: url(/images/icon-arrow-down.svg);
+        content: url(../images/icon-arrow-down.svg);
         display: inline-block;
         padding-left: 0.4rem;
     }
@@ -177,7 +177,7 @@ li {
     } 
 
     input:checked ~ label::after {
-        content: url(/images/icon-arrow-up.svg);
+        content: url(../images/icon-arrow-up.svg);
     }
 }
 
@@ -188,19 +188,19 @@ li {
     }
 
     li:nth-child(1)::before {
-        content: url(/images/icon-todo.svg);
+        content: url(../images/icon-todo.svg);
     }
 
     li:nth-child(2)::before {
-        content: url(/images/icon-calendar.svg);
+        content: url(../images/icon-calendar.svg);
     }
 
     li:nth-child(3)::before {
-        content: url(/images/icon-reminders.svg);
+        content: url(../images/icon-reminders.svg);
     }
 
     li:nth-child(4)::before {
-        content: url(/images/icon-planning.svg);
+        content: url(../images/icon-planning.svg);
     }
 }
 //
