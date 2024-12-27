@@ -1,0 +1,273 @@
+
+/* || base */
+:root {
+    --Blue: hsl(246, 80%, 60%);
+
+    --Light-red-work: hsl(15, 100%, 70%);
+    --Soft-blue-play: hsl(195, 74%, 62%);
+    --Light-red-study: hsl(348, 100%, 68%);
+    --Lime-green-exercise: hsl(145, 58%, 55%);
+    --Violet-social: hsl(264, 64%, 52%);
+    --Soft-orange-self-care: hsl(43, 84%, 65%);
+
+    --Very-dark-blue: hsl(226, 43%, 10%);
+    --Dark-blue: hsl(235, 46%, 20%);
+    --Dark-blue-hover: hsl(236, 40%, 31%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%);
+
+    --padding-data: 1.5rem;
+    --padding-data-desktop: 2rem;
+    --padding-user-r: 1.8rem;
+    --padding-user-tb: 2rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+    font-family: "Rubik", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--Pale-Blue);
+
+    background-color: var(--Very-dark-blue);
+}
+
+/* || main */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: stretch;
+    gap: 1.5rem;
+    margin: 5rem auto;
+    width: calc(100% - 3rem);
+    max-width: 36rem;
+}
+
+.card { 
+    border-radius: 1rem;
+    overflow: hidden;
+    min-width: 12.5rem;
+}
+
+.card article {
+    border-radius: 1rem;
+    
+}
+
+/* user info */
+.card_user {
+    background-color: var(--Dark-blue);
+}
+
+.card_user article {
+    background-color: var(--Blue);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: var(--padding-user-tb) var(--padding-user-r);
+}
+
+.card_user img {
+    width: 4.4rem;
+    height: auto;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+h1 span {
+    display: block;
+    font-size: 1.45rem;
+    margin-top: 0.3rem;
+    font-weight: 300;
+    color: white;
+}
+/* - */
+
+/* nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding-data) var(--padding-data) var(--padding-data) var(--padding-user-r);
+}
+
+input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+label {
+    font-size: 1.1rem;
+    color: var(--Desaturated-blue);
+}
+
+input:checked + label {
+    color: white;
+}
+label:hover {
+    cursor: pointer;
+    color: white;
+}
+
+/* - */
+
+/* card data */
+.card_data article {
+    background-color: var(--Dark-blue);
+    margin-top: 2.4rem;
+    padding: 1.8rem var(--padding-data) var(--padding-data);
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+.card_data article:hover:not(:has(button:hover)) {
+    cursor: pointer;
+    background-color: var(--Dark-blue-hover);
+}
+
+h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: white;
+}
+
+button {
+    justify-self: end;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+button:hover > img {
+    filter: brightness(100);
+    cursor: pointer;
+}
+
+
+.current {
+    font-size: 2rem;
+    font-weight: 300;
+    color: white;
+}
+
+.previous {
+    align-self: center;
+    text-align: end;
+    font-size: 0.9rem;
+}
+
+.card_data {
+    background-repeat: no-repeat;
+    background-position: top -0.7rem right 1rem;
+}
+.card--work {
+    background-color: var(--Light-red-work);
+    background-image: url(../images/icon-work.svg);
+}
+.card--play {
+    background-color: var(--Soft-blue-play);
+    background-image: url(../images/icon-play.svg);
+
+}
+.card--study {
+    background-color: var(--Light-red-study);
+    background-image: url(../images/icon-study.svg);
+
+}
+.card--exercise {
+    background-color: var(--Lime-green-exercise);
+    background-image: url(../images/icon-exercise.svg);
+}
+.card--social {
+    background-color: var(--Violet-social);
+    background-image: url(../images/icon-social.svg);
+}
+.card--self-care {
+    background-color: var(--Soft-orange-self-care);
+    background-image: url(../images/icon-self-care.svg);
+}
+/* - */
+/* -- */
+
+/* || RWD */
+@media screen and (min-width: 64rem) {
+    main {
+        max-width: 69rem;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.9rem;
+        margin: auto;
+    }
+
+    /* user info */
+    .card_user {
+        grid-row: 1 / 3;
+        min-height: 32.2rem;
+    }
+
+    .card_user article {
+        flex-direction: column;
+        align-items: start;
+        gap: 2.6rem;
+        min-height: 22rem;
+        padding-left: var(--padding-data-desktop);
+    }
+
+    .card_user img {
+        width: 5.3rem;
+    }
+
+    h1 span {
+        font-size: 2.5rem;
+        line-height: 1.2;
+        margin-top: 0.2rem;
+    }
+    /* - */
+
+    /* nav */
+    nav {
+        flex-direction: column;
+        gap: var(--padding-data);
+        padding-left: var(--padding-data-desktop);
+    }
+    /* - */
+
+    /* card data */
+    .card_data article {
+        margin-top: 2.85rem;
+        padding-left: var(--padding-data-desktop);
+        padding-bottom: var(--padding-data-desktop);
+        height: calc(100% - 2.85rem);
+    }
+
+    .current, .previous {
+        grid-column: 1 / 3;
+        align-self: end;
+        line-height: 1.1;
+    }
+    .current {
+        font-size: 3.5rem;
+    }
+
+    .previous {
+        text-align: start;
+    }
+    /* - */
+}
+/* -- */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: white;
+  }

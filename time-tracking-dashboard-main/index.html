@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./stylesheets/reset.css" />
+    <link rel="stylesheet" href="./stylesheets/main.css" />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style></style>
+  </head>
+  <body>
+    <main>
+      <section class="card card_user">
+        <article>
+          <img src="./images/image-jeremy.png" alt="avatar" />
+          <h1>Report for <span>Jeremy Robson</span></h1>
+        </article>
+        <nav>
+          <input type="radio" id="daily" name="frequency" />
+          <label for="daily">Daily</label>
+          <input type="radio" id="weekly" name="frequency" checked />
+          <label for="weekly">Weekly</label>
+          <input type="radio" id="monthly" name="frequency" />
+          <label for="monthly">Monthly</label>
+        </nav>
+      </section>
+
+      <section class="card card_data card--work">
+        <article>
+          <h2 id="work-label">Work</h2>
+          <button aria-label="work details">
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </button>
+          <p class="current" aria-live="polite" aria-labelledby="work-label">
+            5hrs
+          </p>
+          <p class="previous" aria-live="polite" aria-labelledby="work-label">
+            Previous - 7hrs
+          </p>
+        </article>
+      </section>
+
+      <section class="card card_data card--play">
+        <article>
+          <h2 id="play-label">Play</h2>
+          <button aria-label="play details">
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </button>
+          <p class="current" aria-live="polite" aria-labelledby="play-label">
+            1hr
+          </p>
+          <p class="previous" aria-live="polite" aria-labelledby="play-label">
+            Previous - 2hrs
+          </p>
+        </article>
+      </section>
+
+      <section class="card card_data card--study">
+        <article>
+          <h2 id="study-label">Study</h2>
+          <button aria-label="study details">
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </button>
+          <p class="current" aria-live="polite" aria-labelledby="study-label">
+            0hrs
+          </p>
+          <p class="previous" aria-live="polite" aria-labelledby="study-label">
+            Previous - 1hr
+          </p>
+        </article>
+      </section>
+
+      <section class="card card_data card--exercise">
+        <article>
+          <h2 id="exercise-label">Exercise</h2>
+          <button aria-label="exercise details">
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </button>
+          <p
+            class="current"
+            aria-live="polite"
+            aria-labelledby="exercise-label"
+          >
+            1hr
+          </p>
+          <p
+            class="previous"
+            aria-live="polite"
+            aria-labelledby="exercise-label"
+          >
+            Previous - 1hr
+          </p>
+        </article>
+      </section>
+
+      <section class="card card_data card--social">
+        <article>
+          <h2 id="social-label">Social</h2>
+          <button aria-label="social details">
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </button>
+          <p class="current" aria-live="polite" aria-labelledby="social-label">
+            1hr
+          </p>
+          <p class="previous" aria-live="polite" aria-labelledby="social-label">
+            Previous - 3hrs
+          </p>
+        </article>
+      </section>
+
+      <section class="card card_data card--self-care">
+        <article>
+          <h2 id="self-care-label">Self Care</h2>
+          <button aria-label="self care details">
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </button>
+          <p
+            class="current"
+            aria-live="polite"
+            aria-labelledby="self-care-label"
+          >
+            0hrs
+          </p>
+          <p
+            class="previous"
+            aria-live="polite"
+            aria-labelledby="self-care-label"
+          >
+            Previous - 1hr
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Wanzi</a>.
+      </div>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
