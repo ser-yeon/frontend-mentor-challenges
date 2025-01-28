@@ -1,7 +1,3 @@
-document.addEventListener("touchend", function () {
-  document.activeElement.blur();
-});
-
 async function fetchData() {
     const apiUrl = "https://api.adviceslip.com/advice";
 
@@ -28,3 +24,7 @@ async function fetchData() {
   button.addEventListener("click", () => {
     fetchData();
   });
+
+  button.addEventListener("touchend", () => {
+    button.blur();
+  })
