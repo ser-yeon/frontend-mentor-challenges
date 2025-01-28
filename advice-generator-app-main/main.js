@@ -25,6 +25,8 @@ async function fetchData() {
     fetchData();
   });
 
-  button.addEventListener("touchend", () => {
-    button.blur();
-  })
+  document.addEventListener("touchend", function () {
+    document.querySelectorAll("button").forEach((btn) => {
+        btn.blur();
+    });
+});
