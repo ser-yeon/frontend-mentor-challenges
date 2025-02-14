@@ -1,0 +1,205 @@
+/* || base */
+body {
+  font-family: "Overpass", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.font--ubuntu {
+  font-family: "Ubuntu", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* -- */
+/* || header */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: radial-gradient(circle at left top, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  position: relative;
+  min-height: 37.3rem;
+  border-radius: 0 0 0 6.5rem;
+  overflow: hidden;
+  color: hsl(0, 0%, 100%);
+}
+header picture {
+  position: absolute;
+  left: -21rem;
+  top: -15.5rem;
+}
+header picture img {
+  max-width: none;
+  width: 83rem;
+}
+header h1, header p, header div {
+  z-index: 3;
+  padding: 0 2rem;
+}
+header h1 {
+  font-size: 2.15rem;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 0.9rem;
+}
+header p {
+  font-size: 1.1rem;
+  word-spacing: 1px;
+  line-height: 1.3;
+  margin-bottom: 2.8rem;
+}
+header .header__btns {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+}
+header .btn {
+  padding: 0;
+  max-width: 8.5rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  border: solid 1px hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 0.95rem;
+  word-spacing: 1px;
+  flex: 1;
+}
+header .btn--white {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(356, 100%, 66%);
+}
+header .btn--transparent {
+  background-color: transparent;
+  color: hsl(0, 0%, 100%);
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 3.5rem;
+  padding: 0 1.5rem;
+}
+nav .logo {
+  height: 2rem;
+}
+nav > button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+/* -- */
+/* || main */
+main {
+  padding: 6.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+main picture, main img {
+  max-width: none;
+  width: 100%;
+  height: auto;
+  margin: 3rem 0;
+}
+
+/* | section1 */
+section {
+  padding: 0 2rem;
+}
+
+h2, h3 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: hsl(208, 49%, 24%);
+}
+
+h3 {
+  letter-spacing: 0.2px;
+  line-height: 1.2;
+}
+
+.h3--1 {
+  margin-bottom: 0.95rem;
+}
+
+.h3--2 {
+  margin-bottom: 1.5rem;
+}
+
+main p {
+  line-height: 1.73;
+  letter-spacing: 0.5px;
+  color: hsl(207, 13%, 34%);
+  margin-bottom: 2.6rem;
+}
+
+/* - */
+/* | section2 */
+.section--2 {
+  padding: 0;
+  position: relative;
+}
+.section--2 > img {
+  position: absolute;
+  margin: 0;
+  z-index: 3;
+}
+.section--2 > div {
+  margin-top: 45%;
+  min-height: 39rem;
+  background-image: linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  padding: 0;
+  border-radius: 0 6.5rem 0 6.5rem;
+  overflow: hidden;
+  position: relative;
+}
+.section--2 > div img {
+  position: absolute;
+  width: 160%;
+  left: -30%;
+  top: -40%;
+  z-index: 0;
+}
+.section--2 > div h3, .section--2 > div p {
+  color: hsl(0, 0%, 100%);
+  padding: 0 2rem;
+  z-index: 1;
+}
+.section--2 > div h3 {
+  font-size: 2.5rem;
+  letter-spacing: -1px;
+  word-spacing: -0.1rem;
+  margin-top: 63.5%;
+  margin-bottom: 1rem;
+}
+.section--2 > div .div__content {
+  position: relative;
+  z-index: 2;
+}
+
+/* - */
+/* | section3 */
+.section--3 .h3--3 {
+  margin-bottom: 1.6rem;
+}
+.section--3 p {
+  letter-spacing: 0.4px;
+}
+
+/* - */
+/* || footer */
+footer {
+  background-color: hsl(240, 10%, 16%);
+}
+
+/*# sourceMappingURL=main.css.map */
