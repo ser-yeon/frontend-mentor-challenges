@@ -653,10 +653,6 @@ footer {
         grid-template-columns: 1fr 1fr;
         column-gap: 1.8rem;
         position: relative;
-    }
-
-    .section--1 {
-        margin-bottom: 11.4rem;
 
         h2,
         h3,
@@ -674,6 +670,12 @@ footer {
             object-fit: none;
             width: auto;
         }
+    }
+
+    .section--1 {
+        margin-bottom: 11.4rem;
+
+
 
         h2 {
             font-size: 2.4rem;
